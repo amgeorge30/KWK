@@ -39,7 +39,7 @@ class Quiz
     answer = gets.chomp.to_i 
      puts "searching..."
       sleep (1)
-    if answer = kardashian.birth_year
+    if answer == kardashian.birth_year
       puts "Congrats! Well done."
     else 
       puts "Wrong! Better luck next time." 
@@ -76,4 +76,3 @@ Quiz.start_quiz #dont need self; indicator to class
 # create a quiz that either quizzes the number of children and/or birth year (choose one first and then add the other one
 # if you really don't want to do the Kardashians you can also do other celebrities
 # once your quiz is running it should keep track of the score, asks #the user if they want to end, option which quiz
-
